@@ -25,3 +25,21 @@ Data Glossary:
 * 'HOURLYPrecip' is the amount of precipitation in inches to hundredths over the past hour. For certain automated stations, precipitation will be reported at sub-hourly intervals (e.g. every 15 or 20 minutes) as an accumulated amount of all precipitation within the preceding hour. A “T” indicates a trace amount of precipitation.
 * 'HOURLYWindSpeed' is the speed of the wind at the time of observation given in miles per hour (mph).
 * 'HOURLYStationPressure' is the atmospheric pressure observed at the station during the time of observation. Given in inches of Mercury (in Hg).
+
+## Project Goals
+
+* Perform data cleaning and selection of key meteorological variables.
+
+* Conduct Exploratory Data Analysis (EDA) with visualizations.
+
+* Build Simple and Multiple Linear Regression Models to predict precipitation.
+
+* Evaluate models using RMSE, R-squared, and MSE.
+
+* Implement Lasso and Ridge Regression for regularization.
+
+* Apply Cross-Validation to ensure model generalizability.
+
+* Conduct Residual Analysis for model diagnostics.
+
+* Use Stepwise Model Selection (AIC) to improve model parsimony
