@@ -58,12 +58,13 @@ caret – Model training and cross-validation
 
 MASS – Stepwise AIC model selection
 
-## Model Performance
+##
 
-Model | RMSE (Train) | RMSE (Test)
-Model 1: RH only | 0.03303 | 0.03311
-Model 2: RH + SP | 0.03294 | 0.03301
-Model 3: RH + SP + WS | 0.03280 | 0.03290
+| Model              | RMSE (Train) | RMSE (Test) |
+|-------------------|--------------|-------------|
+| Model 1: RH only  | 0.03303      | 0.03311     |
+| Model 2: RH + SP  | 0.03294      | 0.03301     |
+| Model 3: RH + SP + WS | 0.03280  | 0.03290     |
 
 Where:
 
