@@ -14,7 +14,7 @@ The key columns that we will explore in this project are:
 
 * HOURLYRelativeHumidity
 * HOURLYDRYBULBTEMPF
-* HOURLYPrecip
+* HOURLYPrecip(target variable)
 * HOURLYWindSpeed
 * HOURLYStationPressure
 
@@ -43,3 +43,56 @@ Data Glossary:
 * Conduct Residual Analysis for model diagnostics.
 
 * Use Stepwise Model Selection (AIC) to improve model parsimony
+
+## Tools & Libraries
+
+* tidyverse – Data wrangling and visualization
+
+* ggplot2 – Plotting
+
+* glmnet – Lasso/Ridge regression
+
+tidymodels – Unified modeling interface
+
+caret – Model training and cross-validation
+
+MASS – Stepwise AIC model selection
+
+## Model Performance
+
+Model | RMSE (Train) | RMSE (Test)
+Model 1: RH only | 0.03303 | 0.03311
+Model 2: RH + SP | 0.03294 | 0.03301
+Model 3: RH + SP + WS | 0.03280 | 0.03290
+
+Where:
+
+RH = Relative Humidity
+SP = Station Pressure
+WS = Wind Speed
+
+## Insights
+The multiple linear regression model with RH, SP, and WS had the lowest RMSE, indicating stronger predictive capability.
+
+Cross-validation confirmed minimal overfitting.
+
+Stepwise AIC selection affirmed the inclusion of all three predictors.
+
+Residual plots showed good model behavior with randomness and near-normality.
+
+### How to Run
+
+* Clone the repository.
+
+* Open NOAA WEATHER FULL DATASET ANALYSIS.R in RStudio.
+
+* Run line-by-line or as a full script.
+
+Note: Required packages will be installed automatically if not already present.
+
+### Author
+Fortunatus Ochieng
+Data Scientist | BSc Statistic
+
+### License
+This project is open-source and free to use under the MIT License.
